@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <title>Actívate - Bogotá</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Plataforma web que promueve la actividad física y el 
-  bienestar mediante el uso de espacios públicos en Bogotá.">
+  <meta name="description" content="Plataforma web que promueve la actividad física y el bienestar mediante el uso de espacios públicos en Bogotá.">
   <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -58,12 +57,14 @@
       </p>
 
       <div class="cards">
+
         <article class="proyecto-card">
           <i class="bx bx-bullseye"></i>
           <h3>Objetivo</h3>
           <p>
             Ayudar a las personas a encontrar espacios cercanos y adecuados para moverse,
-            entrenar y mantenerse activas. <a class="objetivos-a" href="pages/Objetivos.html">Ver más</a>
+            entrenar y mantenerse activas.
+            <a class="objetivos-a" href="pages/Objetivos.html">Ver más</a>
           </p>
         </article>
 
@@ -83,6 +84,7 @@
             Contribuir a la construcción de ciudades más activas, saludables y llenas de vida.
           </p>
         </article>
+
       </div>
 
       <div class="proyecto-mision">
@@ -96,6 +98,7 @@
 
     <!-- Espacios -->
     <section id="espacios" class="espacios">
+
       <h2 class="espacios-titulo">Espacios Públicos</h2>
 
       <p class="espacios-introduccion">
@@ -103,41 +106,59 @@
         actividad física, entrenar al aire libre y compartir con la comunidad.
       </p>
 
-      <!-- Espacios Filtros-->
+      <!-- Espacios Filtros -->
       <div class="espacios-filtros">
-    <h3 class="filtros-titulo">Encuentra tu espacio ideal</h3>
-    <p class="filtros-descripcion">
-    Filtra los parques públicos según las actividades que más te interesan.</p>
 
-  <form class="filtros-formulario">
-    <div class="filtro-campo">
-      <select id="actividad" name="actividad" class="filtro-select">
-        <option value="*">Seleccionar Actividades</option>
-        <option value="caminata">Caminata</option>
-        <option value="running">Running</option>
-        <option value="ciclismo">Ciclismo</option>
-        <option value="Entrenamiento funcional">Entrenamiento funcional</option>
-        <option value="Pet Friendly">Pet Friendly</option>
-        <option value="Deportes">Deportes</option>
-        <option value="Aeróbicos">Aeróbicos</option>
-        <option value="Patinaje">Patinaje</option>
-        <option value="Canchas">Canchas</option>
-      </select>
-    </div>
-      </form>
-    </div>
+        <h3 class="filtros-titulo">Encuentra tu espacio ideal</h3>
+
+        <p class="filtros-descripcion">
+          Filtra los parques públicos según las actividades que más te interesan.
+        </p>
+
+        <form class="filtros-formulario">
+          <div class="filtro-campo">
+
+            <select id="actividad" name="actividad" class="filtro-select">
+
+              <option value="*">Seleccionar Actividades</option>
+              <option value="caminata">Caminata</option>
+              <option value="running">Running</option>
+              <option value="ciclismo">Ciclismo</option>
+              <option value="entrenamiento">Entrenamiento funcional</option>
+              <option value="pet">Pet Friendly</option>
+              <option value="deportes">Deportes</option>
+              <option value="aerobicos">Aeróbicos</option>
+              <option value="patinaje">Patinaje</option>
+              <option value="canchas">Canchas</option>
+
+            </select>
+
+          </div>
+        </form>
+
+      </div>
 
       <!-- Espacios Cards -->
       <div class="cards">
-        <article class="espacio-card">
+
+        <article class="espacio-card"
+          data-tags="caminata,running,ciclismo,pet,entrenamiento">
+
           <img src="assets/Parque-San-Cristóbal-4.jfif" alt="imagen 1">
+
           <h3 class="espacio-nombre">Parque Simón Bolívar</h3>
-          <p class="espacio-tipo-ubicacion">Parque Metropolitano – Teusaquillo</p>
+
+          <p class="espacio-tipo-ubicacion">
+            Parque Metropolitano – Teusaquillo
+          </p>
+
           <p class="espacio-descripcion">
             Uno de los parques más grandes de la ciudad, ideal para actividades deportivas,
             recreativas y eventos al aire libre.
           </p>
+
           <p class="horario">Lun–Dom: 8:00 AM – 5:00 PM</p>
+
           <ul class="espacio-actividades">
             <li>Caminata</li>
             <li>Running</li>
@@ -145,17 +166,28 @@
             <li>Pet Friendly</li>
             <li>Entrenamiento funcional</li>
           </ul>
+
           <a href="#inicio">Ver Más →</a>
+
         </article>
 
-        <article class="espacio-card">
+        <article class="espacio-card"
+          data-tags="deportes,aerobicos,caminata,pet">
+
           <img src="assets/Parque-Tercer-Milenio-2.jpg" alt="imagen 2">
+
           <h3 class="espacio-nombre">Parque Tercer Milenio</h3>
-          <p class="espacio-tipo-ubicacion">Parque Metropolitano – Santa Fe</p>
+
+          <p class="espacio-tipo-ubicacion">
+            Parque Metropolitano – Santa Fe
+          </p>
+
           <p class="espacio-descripcion">
             Espacio integrador con escenarios deportivos y recreativos en el centro de la ciudad.
           </p>
+
           <p class="horario">Lun–Dom: 8:00 AM – 5:00 PM</p>
+
           <ul class="espacio-actividades">
             <li>Deportes</li>
             <li>Aeróbicos</li>
@@ -163,18 +195,29 @@
             <li>Recreación</li>
             <li>Pet Friendly</li>
           </ul>
+
           <a href="#inicio">Ver Más →</a>
+
         </article>
 
-        <article class="espacio-card">
+        <article class="espacio-card"
+          data-tags="ciclismo,patinaje,deportes,pet,canchas">
+
           <img src="assets/Simón-bolívar-0.jfif" alt="imagen 3">
+
           <h3 class="espacio-nombre">Parque San Cristóbal</h3>
-          <p class="espacio-tipo-ubicacion">Parque Metropolitano – San Cristóbal Sur</p>
+
+          <p class="espacio-tipo-ubicacion">
+            Parque Metropolitano – San Cristóbal Sur
+          </p>
+
           <p class="espacio-descripcion">
             Parque con velódromo, canchas deportivas y zonas recreativas para diferentes
             disciplinas.
           </p>
+
           <p class="horario">Lun–Dom: 8:00 AM – 6:00 PM</p>
+
           <ul class="espacio-actividades">
             <li>Ciclismo</li>
             <li>Patinaje</li>
@@ -182,14 +225,19 @@
             <li>Gimnasio</li>
             <li>Pet Friendly</li>
           </ul>
+
           <a href="#inicio">Ver Más →</a>
+
         </article>
+
       </div>
     </section>
 
     <!-- ODS -->
     <section id="ods" class="ods">
+
       <h2 class="ods-titulo">Objetivo de Desarrollo Sostenible</h2>
+
       <p class="ods-subtitulo">ODS 3: Salud y Bienestar</p>
 
       <div class="ods-proposito">
@@ -200,6 +248,7 @@
       </div>
 
       <div class="cards">
+
         <article class="meta-card">
           <h3>Meta 1</h3>
           <p>Reducir la mortalidad prematura por enfermedades no transmisibles.</p>
@@ -214,123 +263,131 @@
           <h3>Meta 3</h3>
           <p>Reducir enfermedades causadas por contaminación ambiental.</p>
         </article>
+
       </div>
     </section>
 
     <!-- Contacto -->
     <section id="contacto" class="contacto">
-     <h2 class="contacto-titulo">Contacto</h2>
-     <p class="contacto-descripcion">
-    ¿Tienes sugerencias, conoces un espacio público o quieres aportar al proyecto?<br>
-    Escríbenos y ayúdanos a activar tu ciudad.
-     </p>
- <div class="contacto-container">
-  <div class="formulario">
-    <form>
-    <div class="contacto-campo">
-      <label for="nombre">Nombre completo*</label>
-      <input
-        type="text"
-        id="nombre"
-        name="nombre"
-        required
-      >
-    </div>
 
-    <div class="contacto-campo">
-      <label for="correo" class="contacto-etiqueta">Correo electrónico*</label>
-      <input
-        type="email"
-        id="correo"
-        name="correo"
-        
-        required
-      >
-    </div>
+      <h2 class="contacto-titulo">Contacto</h2>
 
-    <div class="contacto-campo">
-      <label for="telefono" class="contacto-etiqueta">
-        Teléfono (opcional)
-      </label>
-      <input
-        type="tel"
-        id="telefono"
-        name="telefono"
-        
-      >
-    </div>
+      <p class="contacto-descripcion">
+        ¿Tienes sugerencias, conoces un espacio público o quieres aportar al proyecto?<br>
+        Escríbenos y ayúdanos a activar tu ciudad.
+      </p>
 
-    <div class="contacto-campo">
-      <label for="mensaje" class="contacto-etiqueta">Mensaje*</label>
-      <textarea
-        id="mensaje"
-        name="mensaje"
-        class="contacto-textarea"
-        rows="4"
-        required
-      ></textarea>
-    </div>
+      <div class="contacto-container">
 
-    <button type="submit" class="contacto-boton">
-      Enviar
-    </button>
-    </form>
-</div>
-  <div class="contacto-cards">
+        <div class="formulario">
 
-    <article class="contacto-card">
-      <h3>Información de Contacto</h3>
+          <form>
 
-      <strong>Email:</strong>
-      <p>activatebogota@gmail.com</p>
+            <div class="contacto-campo">
+              <label for="nombre">Nombre completo*</label>
+              <input type="text" id="nombre" name="nombre" required>
+            </div>
 
-      <strong>Teléfono:</strong>
-      <p>+57 123 45 67</p>
-    </article>
+            <div class="contacto-campo">
+              <label for="correo" class="contacto-etiqueta">
+                Correo electrónico*
+              </label>
+              <input type="email" id="correo" name="correo" required>
+            </div>
 
-    <article class="horario-card">
-      <h3>Horario de atención</h3>
-      <p>Lunes a Viernes: 9:00 - 18:00</p>
-      <p>Sábados: 10:00 - 14:00</p>
-      <p>Domingos: Cerrado</p>
-    </article>
+            <div class="contacto-campo">
+              <label for="telefono" class="contacto-etiqueta">
+                Teléfono (opcional)
+              </label>
+              <input type="tel" id="telefono" name="telefono">
+            </div>
 
-  </div>
-</div>
-  </section>
+            <div class="contacto-campo">
+              <label for="mensaje" class="contacto-etiqueta">
+                Mensaje*
+              </label>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                class="contacto-textarea"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="contacto-boton">
+              Enviar
+            </button>
+
+          </form>
+
+        </div>
+
+        <div class="contacto-cards">
+
+          <article class="contacto-card">
+            <h3>Información de Contacto</h3>
+
+            <strong>Email:</strong>
+            <p>activatebogota@gmail.com</p>
+
+            <strong>Teléfono:</strong>
+            <p>+57 123 45 67</p>
+          </article>
+
+          <article class="horario-card">
+            <h3>Horario de atención</h3>
+
+            <p>Lunes a Viernes: 9:00 - 18:00</p>
+            <p>Sábados: 10:00 - 14:00</p>
+            <p>Domingos: Cerrado</p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
 
   </main>
-  
+
   <!-- Footer -->
   <footer class="footer">
+
     <div class="footer-content">
-    <div class="footer-section">
-    <h4>Actívate Bogotá</h4>
-    <p>Trabajando por una vida sana y el bienestar de todos.</p>
+
+      <div class="footer-section">
+        <h4>Actívate Bogotá</h4>
+        <p>Trabajando por una vida sana y el bienestar de todos.</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Navegación</h4>
+
+        <ul class="navegacion-footer">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#proyecto">Proyecto</a></li>
+          <li><a href="#espacios">Espacios Públicos</a></li>
+          <li><a href="#ods">ODS</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contacto</h4>
+
+        <p>activatebogota@gmail.com</p>
+        <p>Lun-Vie: 9:00 - 18:00</p>
+      </div>
+
     </div>
 
-    <div class="footer-section">
-    <h4>Navegación</h4>
-    <ul class="navegacion-footer">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#proyecto">Proyecto</a></li>
-        <li><a href="#espacios">Espacios Públicos</a></li>
-        <li><a href="#ods">ODS</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </div>
-    
-    <div class="footer-section">
-    <h4>Contacto</h4>
-    <p>activatebogota@gmail.com</p>
-    <p>Lun-Vie: 9:00 - 18:00</p>
-    </div>
-    </div>
     <div class="footer-bottom">
-    <p>© 2026 Actívate Bogotá. Todos los derechos reservados.</p>
+      <p>© 2026 Actívate Bogotá. Todos los derechos reservados.</p>
     </div>
 
   </footer>
+
+  <script src="dis/js/app.js"></script>
 
 </body>
 </html>
